@@ -1,0 +1,21 @@
+<h1>Meus Produtos</h1>
+<table>
+	<thead>
+		<tr>
+			<th>Código</th>
+			<th>Descrição</th>
+			<th>Quantidade</th>
+			<th>Preço</th>
+		</tr>
+	</thead>
+	<tbody>
+		<?php foreach($produtos AS $produto): ?>
+		<tr>
+			<td><?php echo $produto['id']; ?></td>
+			<td><?php echo $produto['descricao']; ?></td>
+			<td><?php echo $produto['quantidade']; ?></td>
+			<td><?php echo $produto['preco']; ?></td>
+		</tr>
+		<?php endforeach; ?>
+	</tbody>
+</table>
