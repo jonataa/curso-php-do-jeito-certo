@@ -3,26 +3,26 @@
 class Produtos extends Controller {	
 
 	public function listar()
-	{				
-		$produtos[] = array(
-				'id' 			=> 20,
-				'descricao' 	=> 'TV LED 50"',
-				'quantidade' 	=> '100',
-				'preco'			=> 'R$ 2.000,00'				
-			);
+	{	
+		require_once('app/models/Produto.class.php');		
+		$produto  = new Produto();
 
-		$produtos[] = array(
-				'id' 			=> 32,
-				'descricao' 	=> 'IPhone 5',
-				'quantidade' 	=> '500',
-				'preco'			=> 'R$ 2.800,00'				
-			);	
-
+		$produtos = $produto->getProdutos();
+		
 		$this->view->set('produtos', $produtos);				
 	}
 
 	public function add()
 	{							
+		if(isset($_POST) && !empty($_POST)):
+			require_once('app/models/Produto.class.php');		
+			$produto  			 = new Produto();			
+			$produto->descricao  = filter_var(filter_input(INPUT_POST, 'descricao'), FILTER_SANITIZE_STRING);
+			$produto->quantidade = filter_var(filter_input(INPUT_POST, 'quantidade'), FILTER_SANITIZE_NUMBER_INT);
+			$preco = str_replace(',', '.', filter_input(INPUT_POST, 'preco'));
+			$produto->preco      = filter_var($preco, FILTER_SANITIZE_NUMBER_FLOAT);
+			$produto->salvar();
+		endif;
 	}
 
 	public function delete($id)

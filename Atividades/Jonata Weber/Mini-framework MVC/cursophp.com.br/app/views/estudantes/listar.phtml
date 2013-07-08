@@ -1,0 +1,19 @@
+<h1>Listar Estudantes</h1>
+<table>
+	<thead>
+		<tr>
+			<th>Código</th>
+			<th>Nome</th>
+			<th>Matricula</th>			
+		</tr>
+	</thead>
+	<tbody>
+		<?php foreach($estudantes AS $row): ?>
+		<tr>
+			<td><?php echo $row['id']; ?></td>
+			<td><?php echo $row['nome']; ?></td>
+			<td><?php echo $row['matricula']; ?></td>			
+		</tr>
+		<?php endforeach; ?>
+	</tbody>
+</table>

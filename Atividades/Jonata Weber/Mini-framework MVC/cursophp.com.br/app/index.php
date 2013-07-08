@@ -6,7 +6,9 @@ $controller = $uri[1];
 $action 	= $uri[2];
 
 
-try {
+try {	
+	require_once("lib/Datasource.class.php");
+	require_once("lib/Model.class.php");
 	require_once("lib/View.class.php");
 	require_once("lib/Controller.class.php");
 	
