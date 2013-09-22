@@ -1,0 +1,7 @@
+Preparei alguns exercícios para vocês irem se divertindo, qualquer dúvida, podem me perguntar.
+
+1 - Programar uma função que receba três variáveis e retorne um array contendo o maior, o menor e a média entre eles.
+
+2 - Programar uma função que receba um array com números aleatórios e retorne-o ordenado do maior para o menor. Para gerar os números aleatórios, podem utilizar a função rand() (http://php.net/manual/pt_BR/function.rand.php).
+
+3 - Criar uma classe qualquer (pode ser pessoa, carro, etc) contendo um método baseado no contexto da classe. Por exemplo, uma pessoa fala, então cria uma classe Pessoa com um método falar. Além de criá-la, instancie e utilize o método criado.
