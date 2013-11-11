@@ -11,6 +11,10 @@ if(URI == '' || URI == '/produtos/listar') {
 	Produto::listar();	
 } elseif(URI == '/carrinho') {
 	Carrinho::index();	
+} elseif(URI == '/carrinho/add') {		
+	Carrinho::add($_GET['id']);
+} elseif(URI == '/carrinho/limpar') {		
+	Carrinho::limpar();
 }
 
 

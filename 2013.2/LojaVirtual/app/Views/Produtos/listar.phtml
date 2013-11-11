@@ -1,10 +1,29 @@
 <!doctype html>
 <html>
 	<head>
+		<meta charset="UTF-8" />
 		<title><?php echo TITULO; ?></title>
 	</head>
 	<body>
 		<h1>Listar Produtos</h1>
+		<table cellpadding="5" border="2">
+			<tr>
+				<th>Código</th>
+				<th>Descrição</th>
+				<th>Preço</th>
+				<th>Status</th>
+				<th></th>
+			</tr>
+			<?php foreach($produtos as $produto): ?>
+			<tr>			
+				<td><?php echo $produto['id']; ?></td>	
+				<td><?php echo $produto['descricao']; ?></td>	
+				<td><?php echo $produto['precoFormatado']; ?></td>	
+				<td><?php echo $produto['estoque']; ?></td>	
+				<td><a href="<?php echo $produto['href']; ?>">Comprar</a></td>	
+			</tr>
+			<?php endforeach; ?>
+		</table>
 		<pre><?php print_r($produtos); ?></pre>
 	</body>
 </html>
