@@ -6,6 +6,7 @@
 include '../app/Controllers/Produto.php';
 include '../app/Models/Produto.php';
 include '../app/Helpers/View.php';
+include '../app/Helpers/Database.php';
 
 use \Controllers\Produto;
 
