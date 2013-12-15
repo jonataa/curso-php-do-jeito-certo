@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="/js/jquery.min.js"></script>
+	</head>
+	<body>
+		<h1>Descricao: <span id="descricao"></span></h1>
+		<h1>Preco: <span id="preco"></span></h1>
+
+		<form id="form-produto">
+			<label>Descricao</label>
+			<input name="descricao" />
+			<label>Preco</label>
+			<input name="preco" />	
+			<input type="submit" onclick="carregarPagina(); return false;" value="Alterar Valor no Servidor"/>
+		</form>		
+
+		<script type="text/javascript">					
+			carregarPagina = function() {										
+				$.ajax({
+					method: 'POST',
+					url: '/produtos/alterar',
+					data: $("#form-produto").serialize(),
+					dataType: 'json',
+					success: function(data) {					
+						$("#descricao").text(data.descricao);
+						$("#preco").text(data.preco);
+					}
+				});
+			};
+		</script>
+	</body>
+</html>

@@ -1,0 +1,168 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "ac2c88a567c1669fc8167ad221d65f4e",
+    "packages": [
+        {
+            "name": "respect/rest",
+            "version": "0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Respect/Rest.git",
+                "reference": "a43b76a178b677a5d7dcfd5690653fb7379d2590"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Respect/Rest/zipball/a43b76a178b677a5d7dcfd5690653fb7379d2590",
+                "reference": "a43b76a178b677a5d7dcfd5690653fb7379d2590",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Respect\\Rest": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD Style"
+            ],
+            "authors": [
+                {
+                    "name": "Henrique Moody",
+                    "email": "henriquemoody@gmail.com",
+                    "homepage": "http://henriquemoody.com/"
+                },
+                {
+                    "name": "Alexandre Gaigalas",
+                    "email": "alexandre@gaigalas.net"
+                },
+                {
+                    "name": "Augusto Pascutti",
+                    "email": "contato@augustopascutti.com"
+                },
+                {
+                    "name": "kleberhs007",
+                    "email": "kleberhs007@yahoo.com"
+                },
+                {
+                    "name": "Leandro",
+                    "email": "lleitep3@gmail.com"
+                },
+                {
+                    "name": "Rogerio Prado de Jesus",
+                    "email": "rogeriopradoj@gmail.com"
+                },
+                {
+                    "name": "Alexandre Gaigalas",
+                    "email": "alexandre@gaiaglas.net"
+                },
+                {
+                    "name": "Anderson Casimiro",
+                    "email": "duodraco@duo.draco"
+                },
+                {
+                    "name": "Anderson Casimiro",
+                    "email": "duodraco@gmail.com"
+                },
+                {
+                    "name": "Augusto Pascutti",
+                    "email": "augusto@phpsp.org.br"
+                },
+                {
+                    "name": "Ben Ramsey",
+                    "email": "ben@benramsey.com"
+                },
+                {
+                    "name": "eduardomarcate",
+                    "email": "eduardo@marcate.info"
+                },
+                {
+                    "name": "Eduardo M. Garcia",
+                    "email": "eduardo@debian.elam"
+                },
+                {
+                    "name": "Nick Rawe",
+                    "email": "nickrawe2@gmail.com"
+                },
+                {
+                    "name": "Pablo Lacerda de Miranda",
+                    "email": "pablolmiranda@gmail.com"
+                },
+                {
+                    "name": "wesleyvicthor",
+                    "email": "w.v.mendes.s@gmail.com"
+                }
+            ],
+            "description": "Thin controller for RESTful applications",
+            "time": "2012-09-16 23:16:41"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabpot/Twig.git",
+                "reference": "85e4ff98000157ff753d934b9f13659a953f5666"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/85e4ff98000157ff753d934b9f13659a953f5666",
+                "reference": "85e4ff98000157ff753d934b9f13659a953f5666",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.15-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2013-12-06 07:47:10"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}
